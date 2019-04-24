@@ -1,0 +1,58 @@
+html
+    head
+        include head
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') SILAMIK
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/home2') Home
+                    li.nav-item.active
+                        a.nav-link(href='/profil') Profil
+                    li.nav-item.active
+                        a.nav-link(href='/krs') Kartu Rencana Studi (KRS)
+                    li.nav-item.active
+                        a.nav-link(href='/khs') Kartu Hasil Studi (KHS)
+                    li.nav-item.active
+                        a.nav-link(href='/frs') Form Rencana Studi (FRS)
+                    li.nav-item.active
+                        a.nav-link(href='/home') Log Out
+        .page-content
+            .form-v5-content
+                form.form-detail(action='#', method='post')
+                    h2 Kartu Hasil Studi (KHS)
+                    label Tahun Semester
+                    label NPM
+                    label Nama
+                    label Fakultas
+                    label Program Studi
+                    label Program / Jenjang
+                    label Pembimbing Akademik
+                    .container
+                        .row
+                            .col No
+                            .col Kode Mata Kuliah
+                            .col Nama Mata Kuliah
+                            .col SKS
+                            .col Hurup
+                            .col Bobot
+                            .col SKSxBobot
+                            .w-100
+                            .col 1
+                            .col KS2120
+                            .col Algoritma & Pemograman 1
+                            .col 4
+                            .col A
+                            .col 4
+                            .col 16
+                            .w-100
+                            .col 2
+                            .col KS2208
+                            .col Pengantar Teknologi Informasi & Komunikasi
+                            .col 4
+                            .col A
+                            .col 4
+                            .col 16

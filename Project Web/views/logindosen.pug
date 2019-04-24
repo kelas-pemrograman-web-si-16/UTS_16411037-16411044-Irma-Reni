@@ -1,0 +1,33 @@
+html
+    head
+        include head
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') SILAMIK
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/registrasi') Registrasi Mahasiswa
+                    li.nav-item.active
+                        a.nav-link(href='/registrasidosen') Registrasi Dosen
+                    li.nav-item.active
+                        a.nav-link(href='/logindosen') Login Dosen
+                    li.nav-item.active
+                        a.nav-link(href='/bantuan') Bantuan
+        .page-content
+            .form-v5-content
+                form.form-detail(action='#', method='post')
+                    h2 Login
+                    .form-row
+                        label(for='nidn') NIDN
+                        input#npm.input-number(type='double', name='nidn', placeholder='Your NIDN', required='')
+                        i.fas.fa-user
+                    .form-row
+                        label(for='password') Password
+                        input#password.input-text(type='password', name='password', placeholder='Your Password', required='')
+                        i.fas.fa-lock
+                    .form-row-last
+                        a.nav-link(href='/home3')
+                        input.login(type='submit', name='login', value='Login')

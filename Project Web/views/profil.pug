@@ -1,0 +1,26 @@
+html
+    head
+        include head
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') SILAMIK
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/home2') Home
+                    li.nav-item.active
+                        a.nav-link(href='/profil') Profil
+                    li.nav-item.active
+                        a.nav-link(href='/krs') Kartu Rencana Studi (KRS)
+                    li.nav-item.active
+                        a.nav-link(href='/khs') Kartu Hasil Studi (KHS)
+                    li.nav-item.active
+                        a.nav-link(href='/frs') Form Rencana Studi (FRS)
+                    li.nav-item.active
+                        a.nav-link(href='/home') Log Out
+        .page-content
+            .form-v5-content
+                form.form-detail(action='#', method='post')
+                    label Selamat Datang!

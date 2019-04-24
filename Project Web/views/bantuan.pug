@@ -1,0 +1,24 @@
+html
+    head
+        include head
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') SILAMIK
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/registrasi') Registrasi Mahasiswa
+                    li.nav-item.active
+                        a.nav-link(href='/registrasidosen') Registrasi Dosen
+                    li.nav-item.active
+                        a.nav-link(href='/logindosen') Login Dosen
+                    li.nav-item.active
+                        a.nav-link(href='/bantuan') Bantuan
+        .page-content
+            .form-v5-content
+                form.form-detail(action='#', method='post')
+                    h2 Bantuan
+                    label Telepon BAA : 0888888888
+                    label Telepon Marketing : 0987777777
